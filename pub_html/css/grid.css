@@ -1,0 +1,107 @@
+/*
+	SSSS Website 2017
+	Created By: Josh Fernandez
+	Modified By: Josh Fernandez
+	grid.css
+*/
+
+*, *::after, *::before { /* All browsers need to have box sizing */
+	-webkit-box-sizing: border-box; /* Other browsers */
+	-moz-box-sizing: border-box; /* Mozilla Firefox */
+	box-sizing: border-box;
+}
+
+.grid-col-5of6 {
+	width: 83.333%;
+	padding: 0.5rem 0.5rem;
+}
+
+.grid-col-4of6 {
+	width: 66.666%;
+	padding: 0 1.0rem;
+}
+
+.grid-col-4of6-main {
+	width: 66.666%;
+	padding: 0 1.0rem;
+}
+
+.grid-col-3of6 {
+	width: 50%;
+	padding: 0 0.25rem;
+}
+
+.grid-col-2of6 {
+	width: 33.333%;
+	padding: 0.5rem 0.5rem;
+}
+
+.grid-col-2of6-nav {
+	width: 33.333%;
+	padding: 0 0.25rem;
+}
+
+.grid-col-1of6 {
+	width: 16.666%;
+	padding: 0.5rem 0.5rem;
+}
+
+[class^="grid-col-"] {
+	float: left;
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: left;
+}
+
+@media (max-width: 50rem) {
+
+	.grid-col-5of6 {
+		width: 66.666%;
+	}
+
+	.grid-col-1of6 {
+		width: 33.333%;
+		padding: 0;
+	}
+
+	.grid-col-4of6 {
+		width: 100%;
+	}
+
+	.grid-col-4of6-main {
+		width: 100%;
+	}
+
+	.grid-col-3of6 {
+		width: 100%;
+	}
+
+	.grid-col-2of6 {
+		width: 100%;
+	}
+
+	.grid-col-2of6-nav {
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		margin-top: 2rem;
+	}
+
+}
+
+@media (max-width: 30rem) {
+
+	.grid-col-1of6 {
+		width: 100%;
+	}
+
+}
